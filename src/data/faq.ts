@@ -5,7 +5,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     id: 'faq-1',
     category: 'timing',
     question: 'What are the weekly closing days for Ellora and Ajanta Caves?',
-    answer: 'Ellora Caves are closed every Tuesday. Ajanta Caves are closed every Monday. Devagiri Fort, Bibi Ka Maqbara, and Panchakki remain open all 7 days of the week including public holidays.'
+    answer: 'Ellora Caves and Ajanta Caves are both closed on Tuesdays. Devagiri Fort, Bibi Ka Maqbara, and Panchakki remain open all 7 days of the week including public holidays.'
   },
   {
     id: 'faq-2',

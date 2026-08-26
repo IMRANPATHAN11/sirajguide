@@ -79,7 +79,7 @@ export const ATTRACTIONS: Attraction[] = [
     tagline: '30 Rock-Cut Buddhist Monuments | 2nd BCE – 480 CE',
     distance: '105 km North of City',
     timing: '9:00 AM – 5:00 PM',
-    closedDay: 'Closed on Mondays',
+    closedDay: 'Closed on Tuesdays',
     image: 'https://cdn.britannica.com/70/153470-050-F4594C27/Ajanta-Caves-Maharashtra-India.jpg?w=300',
     imageAlt: 'Ajanta Caves Buddhist Monasteries',
     badge: 'UNESCO World Heritage',
