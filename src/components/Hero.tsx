@@ -9,19 +9,19 @@ interface HeroProps {
 
 const HERO_PHOTOS = [
   {
-    src: '/images/siraj-photo1.jpg',
+    src: `${import.meta.env.BASE_URL}images/siraj-photo1.jpg`,
     title: 'Siraj Shaikh at Ellora Caves',
     caption: 'Kailasa Temple & Monolithic Sanctuaries Specialist',
     badge: 'Govt. Verified Guide'
   },
   {
-    src: '/images/siraj-photo2.jpg',
+    src: `${import.meta.env.BASE_URL}images/siraj-photo2.jpg`,
     title: 'Siraj Shaikh at Devagiri Fort',
     caption: '12th-Century Yadava Citadel & Dark Maze Historian',
     badge: 'Military Defense Expert'
   },
   {
-    src: '/images/siraj-photo3.jpg',
+    src: `${import.meta.env.BASE_URL}images/siraj-photo3.jpg`,
     title: 'Siraj Shaikh at Ajanta Caves',
     caption: '2,000-Year-Old Buddhist Fresco & Cave Art Narrator',
     badge: 'Fresco Art Specialist'

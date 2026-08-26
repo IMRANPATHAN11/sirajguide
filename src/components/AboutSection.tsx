@@ -33,11 +33,11 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking, onOpe
               {/* Photo 1: Large Left */}
               <motion.div 
                 whileHover={{ scale: 1.02 }}
-                onClick={() => onOpenLightbox('/images/siraj-photo1.jpg', 'Siraj Shaikh guiding at Ellora Caves')}
+                onClick={() => onOpenLightbox(`${import.meta.env.BASE_URL}images/siraj-photo1.jpg`, 'Siraj Shaikh guiding at Ellora Caves')}
                 className="col-span-2 sm:col-span-1 row-span-2 relative h-[360px] sm:h-[450px] rounded-2xl overflow-hidden border border-[#D4AF37]/40 hover:border-[#D4AF37] cursor-pointer shadow-2xl group hover:shadow-[0_0_25px_rgba(212,175,55,0.3)] transition-all duration-300"
               >
                 <img
-                  src="/images/siraj-photo1.jpg"
+                  src={`${import.meta.env.BASE_URL}images/siraj-photo1.jpg`}
                   alt="Siraj Shaikh at Ellora Caves"
                   className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out"
                 />
@@ -54,11 +54,11 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking, onOpe
               {/* Photo 2: Top Right */}
               <motion.div 
                 whileHover={{ scale: 1.03 }}
-                onClick={() => onOpenLightbox('/images/siraj-photo2.jpg', 'Siraj Shaikh at Devagiri Fort')}
+                onClick={() => onOpenLightbox(`${import.meta.env.BASE_URL}images/siraj-photo2.jpg`, 'Siraj Shaikh at Devagiri Fort')}
                 className="relative h-[210px] rounded-2xl overflow-hidden border border-[#D4AF37]/35 hover:border-[#D4AF37] cursor-pointer shadow-xl group hover:shadow-[0_0_20px_rgba(212,175,55,0.3)] transition-all duration-300"
               >
                 <img
-                  src="/images/siraj-photo2.jpg"
+                  src={`${import.meta.env.BASE_URL}images/siraj-photo2.jpg`}
                   alt="Siraj Shaikh at Devagiri Fort"
                   className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out"
                 />
@@ -74,11 +74,11 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking, onOpe
               {/* Photo 3: Bottom Right */}
               <motion.div 
                 whileHover={{ scale: 1.03 }}
-                onClick={() => onOpenLightbox('/images/siraj-photo3.jpg', 'Siraj Shaikh heritage tour guide')}
+                onClick={() => onOpenLightbox(`${import.meta.env.BASE_URL}images/siraj-photo3.jpg`, 'Siraj Shaikh heritage tour guide')}
                 className="relative h-[210px] rounded-2xl overflow-hidden border border-[#D4AF37]/35 hover:border-[#D4AF37] cursor-pointer shadow-xl group hover:shadow-[0_0_20px_rgba(212,175,55,0.3)] transition-all duration-300"
               >
                 <img
-                  src="/images/siraj-photo3.jpg"
+                  src={`${import.meta.env.BASE_URL}images/siraj-photo3.jpg`}
                   alt="Siraj Shaikh Tour Guide"
                   className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out"
                 />

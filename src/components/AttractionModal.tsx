@@ -73,7 +73,7 @@ export const AttractionModal: React.FC<AttractionModalProps> = ({
               onError={(e) => {
                 const target = e.currentTarget;
                 target.onerror = null;
-                target.src = '/images/siraj-photo1.jpg';
+                target.src = `${import.meta.env.BASE_URL}images/siraj-photo1.jpg`;
               }}
               className="w-full h-full object-cover"
             />
