@@ -18,13 +18,13 @@ const HERO_PHOTOS = [
     src: `${import.meta.env.BASE_URL}images/siraj-photo2.jpg`,
     title: 'Siraj Shaikh at Devagiri Fort',
     caption: '12th-Century Yadava Citadel & Dark Maze Historian',
-    badge: 'Military Defense Expert'
+    badge: 'Communication Expert'
   },
   {
     src: `${import.meta.env.BASE_URL}images/siraj-photo3.jpg`,
     title: 'Siraj Shaikh at Ajanta Caves',
     caption: '2,000-Year-Old Buddhist Fresco & Cave Art Narrator',
-    badge: 'Fresco Art Specialist'
+    badge: 'Senior Specialist Guide'
   }
 ];
 
@@ -42,7 +42,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenLightbox }) => 
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center pt-28 pb-16 lg:py-32 overflow-hidden bg-gradient-to-b from-[#0B0F19] via-[#121212] to-[#1A1A2E]">
+    <section id="hero" className="relative min-h-screen flex items-center pt-32 sm:pt-36 lg:pt-32 pb-16 lg:py-32 overflow-hidden bg-gradient-to-b from-[#0B0F19] via-[#121212] to-[#1A1A2E]">
       {/* Background Ambient Glow Orbs with Royal Gold Colors */}
       <div className="ambient-glow-orb w-[550px] h-[550px] -top-32 left-1/2 -translate-x-1/2 bg-[#D4AF37]/15" />
       <div className="ambient-glow-orb w-[450px] h-[450px] top-1/3 -left-32 bg-[#AA771C]/20" />
@@ -71,9 +71,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenLightbox }) => 
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#D4AF37]/15 border border-[#D4AF37]/40 text-[#F3E5AB] text-xs sm:text-sm font-semibold mb-6 backdrop-blur-md shadow-[0_0_20px_rgba(212,175,55,0.25)]"
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#D4AF37]/15 border border-[#D4AF37]/40 text-[#F3E5AB] text-xs sm:text-sm font-semibold mb-6 mt-2 sm:mt-0 backdrop-blur-md shadow-[0_0_20px_rgba(212,175,55,0.25)]"
             >
-              <Star className="w-4 h-4 text-[#D4AF37] fill-[#D4AF37] animate-pulse" />
+              <Star className="w-4 h-4 text-[#D4AF37] fill-[#D4AF37] animate-pulse flex-shrink-0" />
               <span>18+ Years of Heritage Guiding Excellence</span>
             </motion.div>
 
@@ -107,7 +107,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenLightbox }) => 
                 </div>
                 <div>
                   <div className="text-[11px] uppercase tracking-wider text-[#D4AF37] font-medium">Languages</div>
-                  <div className="text-xs font-bold text-white">English & Hindi</div>
+                  <div className="text-xs font-bold text-white leading-tight">English, Hindi, Marathi, Chinese, Japanese, French, German</div>
                 </div>
               </div>
 

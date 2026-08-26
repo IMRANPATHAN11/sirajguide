@@ -288,7 +288,12 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
                     >
                       <option value="English">English</option>
                       <option value="Hindi">Hindi</option>
-                      <option value="Bilingual (English & Hindi)">Bilingual (English & Hindi)</option>
+                      <option value="Marathi">Marathi</option>
+                      <option value="Chinese">Chinese</option>
+                      <option value="Japanese">Japanese</option>
+                      <option value="French">French</option>
+                      <option value="German">German</option>
+                      <option value="Multilingual">Multilingual (Multiple Languages)</option>
                     </select>
                   </div>
                 </div>

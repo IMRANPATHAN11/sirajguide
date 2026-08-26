@@ -11,7 +11,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking, onOpe
   const specialties = [
     { icon: Landmark, text: 'Monolithic Architecture Deep-Dive' },
     { icon: Crown, text: 'Yadava & Mughal Deccan Lore' },
-    { icon: Languages, text: 'Fluent English & Hindi Narration' },
+    { icon: Languages, text: 'English, Hindi, Marathi, Chinese, Japanese, French, German' },
     { icon: Users, text: 'Family & VIP Delegation Friendly' },
     { icon: Camera, text: 'Best Golden-Hour Photography Spots' }
   ];
@@ -85,8 +85,8 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking, onOpe
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F19]/85 via-transparent to-transparent" />
                 <div className="absolute bottom-3 left-3 right-3">
                   <span className="text-[11px] font-semibold text-white flex items-center gap-1 bg-[#0B0F19]/80 px-2.5 py-1 rounded-lg backdrop-blur-sm border border-[#D4AF37]/40">
-                    <Camera className="w-3 h-3 text-[#D4AF37]" />
-                    Ajanta Frescoes Guide
+                    <Crown className="w-3 h-3 text-[#D4AF37]" />
+                    Devagiri Fort Guide
                   </span>
                 </div>
               </motion.div>

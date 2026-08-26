@@ -60,29 +60,29 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
       <nav
         className={`transition-all duration-500 ${
           scrolled
-            ? 'py-3 bg-[#0B0F19]/95 backdrop-blur-xl border-b border-[#D4AF37]/30 shadow-[0_10px_30px_rgba(0,0,0,0.85)]'
-            : 'py-4 md:py-5 bg-gradient-to-b from-[#0B0F19]/95 via-[#0B0F19]/60 to-transparent'
+            ? 'py-2.5 sm:py-3 bg-[#0B0F19]/95 backdrop-blur-xl border-b border-[#D4AF37]/30 shadow-[0_10px_30px_rgba(0,0,0,0.85)]'
+            : 'py-2.5 sm:py-3.5 md:py-4 bg-gradient-to-b from-[#0B0F19]/95 via-[#0B0F19]/60 to-transparent'
         }`}
       >
-        <div className="container-custom flex items-center justify-between">
+        <div className="container-custom flex items-center justify-between gap-2">
           {/* Brand Logo with Golden Light Effect */}
           <a
             href="#hero"
             onClick={(e) => scrollToSection(e, '#hero')}
-            className="flex items-center gap-3.5 group cursor-pointer"
+            className="flex items-center gap-2.5 sm:gap-3.5 group cursor-pointer flex-shrink-0"
           >
             <motion.div
               whileHover={{ scale: 1.08, rotate: 5 }}
               whileTap={{ scale: 0.95 }}
-              className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#D4AF37]/30 via-[#AA771C]/40 to-[#0B0F19] border border-[#D4AF37]/50 flex items-center justify-center shadow-[0_0_20px_rgba(212,175,55,0.35)] group-hover:border-[#D4AF37] transition-colors"
+              className="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-[#D4AF37]/30 via-[#AA771C]/40 to-[#0B0F19] border border-[#D4AF37]/50 flex items-center justify-center shadow-[0_0_20px_rgba(212,175,55,0.35)] group-hover:border-[#D4AF37] transition-colors flex-shrink-0"
             >
-              <Landmark className="w-5 h-5 text-[#D4AF37] group-hover:text-white transition-colors" />
+              <Landmark className="w-4 h-4 sm:w-5 sm:h-5 text-[#D4AF37] group-hover:text-white transition-colors" />
             </motion.div>
             <div className="flex flex-col">
-              <span className="font-cinzel text-lg md:text-xl font-bold tracking-wider text-white group-hover:text-[#D4AF37] transition-colors">
+              <span className="font-cinzel text-sm sm:text-lg md:text-xl font-bold tracking-wider text-white group-hover:text-[#D4AF37] transition-colors whitespace-nowrap leading-tight">
                 <span className="gold-shimmer-text">SIRAJ SHAIKH</span>
               </span>
-              <span className="text-[10px] tracking-[0.2em] font-semibold text-[#D4AF37] uppercase -mt-0.5">
+              <span className="text-[8.5px] sm:text-[10px] tracking-[0.12em] sm:tracking-[0.2em] font-semibold text-[#D4AF37] uppercase -mt-0.5 whitespace-nowrap">
                 Govt. Certified Heritage Guide
               </span>
             </div>
@@ -115,24 +115,24 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
           </div>
 
           {/* Nav Actions */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
             <motion.button
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.96 }}
               onClick={onOpenBooking}
-              className="btn-primary-luxury text-xs md:text-sm py-2.5 px-4 md:px-5 cursor-pointer font-bold"
+              className="btn-primary-luxury text-[11px] sm:text-xs md:text-sm py-1.5 sm:py-2.5 px-3 sm:px-4 md:px-5 cursor-pointer font-bold whitespace-nowrap"
             >
-              <Calendar className="w-4 h-4" />
+              <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               <span>Book Guide</span>
             </motion.button>
 
             {/* Mobile Hamburger Toggle */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="xl:hidden p-2.5 rounded-lg bg-white/5 border border-[#D4AF37]/30 text-[#D4AF37] hover:bg-[#D4AF37]/10 hover:border-[#D4AF37]/60 transition-colors"
+              className="xl:hidden p-2 sm:p-2.5 rounded-lg bg-white/5 border border-[#D4AF37]/30 text-[#D4AF37] hover:bg-[#D4AF37]/10 hover:border-[#D4AF37]/60 transition-colors flex-shrink-0"
               aria-label="Toggle Navigation"
             >
-              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {mobileMenuOpen ? <X className="w-4 h-4 sm:w-5 sm:h-5" /> : <Menu className="w-4 h-4 sm:w-5 sm:h-5" />}
             </button>
           </div>
         </div>
